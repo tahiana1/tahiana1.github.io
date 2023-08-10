@@ -1,0 +1,87 @@
+[
+    {
+      "name": "Know Pokemon",
+      "title": "Know Pokemon",
+      "url": "https://know-pokemon.vercel.app/",
+      "img": "programming.svg",
+      "tech": [
+        "React",
+        "Jest",
+        "testing-library",
+        "RestAPI"
+      ],
+      "description": "A web application that helps you search and know about any pokemon e.g. Pikachu, butterfree & many more. "
+    },
+    {
+      "name": "Vaccine Guru",
+      "title": "Visit Vaccine Guru",
+      "url": "https://vaccine-guru.vercel.app/",
+      "img": "vaccine.svg",
+      "tech": [
+        "React",
+        "PWA",
+        "NextJS"
+      ],
+      "description": "A web application that helps you find and book covid-19 vaccines in India for allowed age-groups."
+    },
+    {
+      "name": "Next.js Enzyme Boilerplate",
+      "title": "Visit Next.js Enzyme Boilerplate",
+      "img": "next.svg",
+      "tech": [
+        "Next.js",
+        "SCSS",
+        "Jest",
+        "Enzyme"
+      ],
+      "description": "A boilerplate for next.js with scss and enzyme testing. It includes a basic layout, header, footer, and a basic style guide."
+    },
+    {
+      "name": "SpaceX Launch Tracker",
+      "title": "Visit SpaceX Launch Tracker",
+      "url": "https://spacex-missions.vercel.app/",
+      "img": "cuate.svg",
+      "tech": [
+        "React",
+        "Next.js",
+        "RWD"
+      ],
+      "description": "A Responsive web application that tracks SpaceX launches. User can filter results by launch year, success, or date."
+    },
+    {
+      "name": "Netflix Clone",
+      "title": "Visit Netflix Clone",
+      "img": "pana.svg",
+      "tech": [
+        "React",
+        "SCSS",
+        "RestAPI"
+      ],
+      "description": "A web application that helps you find movies and TV shows similar to Netflix."
+    },
+    {
+      "name": "Weather Info",
+      "title": "Visit Weather Info",
+      "img": "netflix.svg",
+      "tech": [
+        "React",
+        "Redux",
+        "OpenWeatherMap"
+      ],
+      "description": "Simple Weather application that shows the weather of a city. User can search for a city and get the weather information."
+    },
+    {
+      "inProgress": true,
+      "name": "Courier Tracker",
+      "title": "Courier Tracker is under development",
+      "url": "",
+      "img": "weather.svg",
+      "tech": [
+        "React",
+        "Redux",
+        "SCSS",
+        "Mongo"
+      ],
+      "description": "Courier Tracker helps find the status of your courier. User can search for a courier and get the status of the courier."
+    }
+  ]
