@@ -1,0 +1,94 @@
+.App-header {
+  background-color: var(--background-color);
+  background-image: url("../images/self_half.webp");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-left: calc(5px + 1% + 2rem);
+  background-blend-mode: screen;
+  /* color: white; */
+}
+
+.App-header .App-profile {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.App-header .App-profile h1 {
+  padding-top: 0;
+}
+
+.App-header .App-profile .sub-text {
+  margin-top: 0;
+  max-width: 100%;
+  line-height: 1.6;
+}
+
+.App-header ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
+}
+
+.App-header ul li {
+  padding-right: 5%;
+  font-size: 30px;
+}
+
+.App-header ul li a.twitter span:hover {
+  color: #1d9bf0;
+}
+.App-header ul li a.outlook span:hover {
+  color: #0078d4;
+}
+.App-header ul li a.github span:hover {
+  color: #fff;
+}
+.App-header ul li a.stackoverflow span:hover {
+  background: -webkit-linear-gradient(#ec7c22, rgb(185, 185, 185));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.App-header ul li a.linkedin span:hover {
+  color: #0077b5;
+  background: radial-gradient(white 60%, transparent 64%);
+}
+.App-header ul li a:hover {
+  text-decoration: none;
+}
+
+.App-header ul li span:hover {
+  color: var(--secondary-font-color);
+}
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    padding: 10px;
+    min-height: 90vh;
+    background-image: none;
+  }
+
+  .App-header .App-profile {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .App-header ul li {
+    padding-right: 10%;
+  }
+}

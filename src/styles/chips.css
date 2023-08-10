@@ -1,0 +1,18 @@
+.chips {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 5px;
+}
+.chip {
+  padding: 5px 10px;
+  border-radius: 50px;
+  display: inline-flex;
+  border: 1.5px solid var(--chip-color);
+  color: var(--chip-color);
+  outline: none;
+  font-size: x-small;
+}

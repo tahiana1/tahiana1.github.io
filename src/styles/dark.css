@@ -1,0 +1,122 @@
+:root {
+  scrollbar-color: #d5663f rgb(46, 54, 69) !important;
+  scrollbar-width: thin !important;
+  --font-color: #333;
+  --secondary-font-color: #333333eb;
+  --background-color: #eee;
+  --link-color: #272935;
+  --nav-color: var(--background-color);
+  --skills-bg-color: var(--background-color);
+  --project-bg-color: var(--background-color);
+}
+
+[data-theme="dark"] {
+  --font-color: #eee;
+  --secondary-font-color: rgba(247, 247, 247, 0.7);
+  /* --background-color: #161a1e; */
+  --background-color: #13151f;
+  --secondary-bg-color: #272935;
+  --link-color: #d5663f;
+  --nav-color: #13151f;
+  --skills-bg-color: var(--background-color: #13151f);
+  --project-bg-color: #13151f;
+  --chip-color: var(--font-color);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* Custom Dark Mode Toggle Element */
+
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto 5%;
+}
+
+.toggle-theme-wrapper span {
+  /* font-size: 28px; */
+  margin: 0 2px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 25px;
+  width: 45px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+[data-theme="light"] .slider:before {
+  left: 4px;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 18px;
+  left: -4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 18px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider {
+  background-color: var(--link-color);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.day-night-icon {
+  position: absolute;
+  top: 2px;
+  z-index: 1;
+}
+
+[data-theme="dark"] .dark {
+  left: 0;
+}
+
+[data-theme="dark"] .light {
+  display: none;
+}
+
+[data-theme="light"] .light {
+  right: 0;
+}
+
+[data-theme="light"] .dark {
+  display: none;
+}

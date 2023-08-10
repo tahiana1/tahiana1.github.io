@@ -1,0 +1,53 @@
+.App-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: var(--skills-bg-color);
+  font-size: calc(10px + 2vmin);
+  border-top: 1px solid transparent;
+}
+
+.App-skills .chart-parent {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem 0;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.App-skills .chart-parent .chart-container {
+  flex-basis: 33%;
+  padding: 2rem 0;
+}
+.App-skills .chart-parent .chart-container:hover {
+  background-color: var(--secondary-bg-color);
+  border-radius: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .App-skills {
+    min-height: auto;
+  }
+  .App-skills .chart-parent {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 1rem;
+    margin-left: -1rem;
+    gap: 1rem;
+  }
+  .App-skills .chart-parent .chart-container {
+    margin-bottom: 2rem;
+    min-width: 75%;
+    padding: 4rem 1rem;
+    background-color: var(--secondary-bg-color);
+    border-radius: 32px;
+  }
+}
